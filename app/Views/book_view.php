@@ -30,8 +30,9 @@
           </p></th>
         </tr>
       </thead>
+      
       <tbody>
-				<?php foreach($books as $book){?>
+				<?php foreach($books as $book):?>
 				     <tr>
 				         <td><?php echo $book->book_id;?></td>
 				         <td><?php echo $book->book_isbn;?></td>
@@ -45,7 +46,7 @@
 
 								</td>
 				      </tr>
-				     <?php }?>
+        <?php endforeach; ?>
 
 
 
